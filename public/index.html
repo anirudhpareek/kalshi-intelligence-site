@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalshi Intelligence Layer</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0a0f;
+      color: #e8e8f0;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(0, 200, 150, 0.15);
+      color: #00c896;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #fff 0%, #00c896 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #8888a8;
+      margin-bottom: 32px;
+      max-width: 500px;
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #00c896;
+      color: #000;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 4px 24px rgba(0, 200, 150, 0.3);
+    }
+
+    .download-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 32px rgba(0, 200, 150, 0.4);
+    }
+
+    .download-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .section {
+      margin-top: 56px;
+    }
+
+    .section h2 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #00c896;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #1a1a24;
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .step {
+      display: flex;
+      gap: 16px;
+      padding: 16px;
+      background: #12121a;
+      border-radius: 8px;
+      border: 1px solid #1a1a24;
+    }
+
+    .step-num {
+      width: 28px;
+      height: 28px;
+      background: rgba(0, 200, 150, 0.15);
+      color: #00c896;
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .step-content h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .step-content p {
+      font-size: 14px;
+      color: #8888a8;
+    }
+
+    .step-content code {
+      background: #1a1a24;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'SF Mono', Menlo, monospace;
+      font-size: 13px;
+      color: #00c896;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    @media (max-width: 560px) {
+      .features { grid-template-columns: 1fr; }
+      h1 { font-size: 32px; }
+    }
+
+    .feature {
+      padding: 16px;
+      background: #12121a;
+      border-radius: 8px;
+      border: 1px solid #1a1a24;
+    }
+
+    .feature h3 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .feature p {
+      font-size: 13px;
+      color: #8888a8;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid #1a1a24;
+      font-size: 13px;
+      color: #555568;
+    }
+
+    .footer a {
+      color: #8888a8;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #00c896;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="badge">Chrome Extension</div>
+    <h1>Kalshi Intelligence Layer</h1>
+    <p class="subtitle">
+      A research sidebar for Kalshi that shows market data, news context, related markets,
+      price alerts, and multi-outcome analysis — all without leaving the page.
+    </p>
+
+    <a href="/kalshi-intelligence.zip" download class="download-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+      </svg>
+      Download Extension
+    </a>
+
+    <div class="section">
+      <h2>Installation (2 min)</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h3>Download & Unzip</h3>
+            <p>Click the download button above and unzip the file</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h3>Open Chrome Extensions</h3>
+            <p>Go to <code>chrome://extensions</code> in your browser</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h3>Enable Developer Mode</h3>
+            <p>Toggle "Developer mode" in the top right corner</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h3>Load the Extension</h3>
+            <p>Click "Load unpacked" and select the unzipped folder</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <h3>Visit Kalshi</h3>
+            <p>Go to any market on <a href="https://kalshi.com" target="_blank" style="color: #00c896;">kalshi.com</a> — the panel appears automatically</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Features</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Market Intelligence</h3>
+          <p>Live probability, volume, open interest, bid/ask spread, and price history chart</p>
+        </div>
+        <div class="feature">
+          <h3>Multi-Outcome View</h3>
+          <p>See all outcomes at once with probability sum and arbitrage detection</p>
+        </div>
+        <div class="feature">
+          <h3>News Context</h3>
+          <p>Relevant headlines pulled automatically, with optional AI summaries</p>
+        </div>
+        <div class="feature">
+          <h3>Related Markets</h3>
+          <p>Discover correlated markets in the same event or series</p>
+        </div>
+        <div class="feature">
+          <h3>Price Alerts</h3>
+          <p>Get notified when markets cross your target price or move sharply</p>
+        </div>
+        <div class="feature">
+          <h3>Thesis Tracking</h3>
+          <p>Record your reasoning and what would change your mind, per market</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Built by <a href="https://github.com/anirudhpareek" target="_blank">Anirudh Pareek</a> · <a href="https://github.com/anirudhpareek/kalshi-intelligence" target="_blank">View on GitHub</a></p>
+    </div>
+  </div>
+</body>
+</html>
