@@ -82,69 +82,67 @@
 <body>
   <div class="container">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: February 25, 2025</p>
+    <p class="updated">Last updated: March 28, 2026</p>
 
     <p>
       Kalshi Intelligence Layer ("the Extension") is a browser extension that enhances the Kalshi.com
-      trading experience. This policy explains what data we collect and how we handle it.
+      trading experience. This policy explains what data is stored and how it is used.
     </p>
 
     <div class="highlight">
-      <p><strong>Summary:</strong> All your data stays on your device. We don't collect, transmit, or sell any personal information.</p>
+      <p><strong>Summary:</strong> All your data stays on your device. We do not collect, transmit, or sell personal information. If you enable optional AI summaries, only public news headlines are sent to Anthropic using the API key you provide.</p>
     </div>
 
     <h2>Data Stored Locally</h2>
     <p>The Extension stores the following data in your browser's local storage (chrome.storage.local):</p>
     <ul>
-      <li><strong>User Preferences:</strong> Panel width, theme, block order, and visibility settings</li>
+      <li><strong>User Preferences:</strong> Panel width, theme, block order, visibility settings, workspace mode, polling interval, and optional AI settings</li>
       <li><strong>Thesis Notes:</strong> Your personal notes and probability estimates for each market</li>
       <li><strong>Price Alerts:</strong> Alert configurations you create</li>
-      <li><strong>Cached Data:</strong> Temporary market data and news headlines (auto-expires)</li>
-      <li><strong>API Key (optional):</strong> If you enable AI summaries, your Anthropic API key is stored locally</li>
+      <li><strong>Cached Data:</strong> Temporary market data and news headlines</li>
+      <li><strong>API Key (optional):</strong> If you enable AI summaries, your Anthropic API key is stored locally on your device</li>
     </ul>
-    <p>This data never leaves your browser unless you explicitly enable the optional AI summary feature.</p>
+    <p>This data stays on your device unless you explicitly enable the optional AI summary feature.</p>
 
     <h2>External Services</h2>
     <p>The Extension connects to the following external services:</p>
     <ul>
-      <li><strong>Kalshi API (api.elections.kalshi.com):</strong> Fetches public market data (prices, volume, etc.). No authentication or personal data is sent.</li>
-      <li><strong>Google News RSS (news.google.com):</strong> Fetches public news headlines related to market topics. No personal data is sent.</li>
-      <li><strong>Anthropic API (api.anthropic.com) - Optional:</strong> If you enable AI summaries and provide your own API key, news headlines are sent to generate summaries. Your thesis notes are never sent.</li>
+      <li><strong>Kalshi API (api.elections.kalshi.com):</strong> Fetches public market data such as prices, volume, and event data.</li>
+      <li><strong>Google News RSS (news.google.com):</strong> Fetches public news headlines related to market topics.</li>
+      <li><strong>Anthropic API (api.anthropic.com) - Optional:</strong> If you enable AI summaries and provide your own API key, public news headlines are sent to generate summaries. Thesis notes are never sent.</li>
     </ul>
 
     <h2>Data We Don't Collect</h2>
     <ul>
-      <li>We don't collect personal information</li>
-      <li>We don't track your browsing activity</li>
-      <li>We don't use analytics or tracking scripts</li>
-      <li>We don't have user accounts or servers</li>
-      <li>We don't sell or share any data</li>
+      <li>We do not collect personal information</li>
+      <li>We do not track browsing activity outside the extension's functionality on Kalshi pages</li>
+      <li>We do not use analytics or tracking scripts</li>
+      <li>We do not have user accounts or our own backend servers</li>
+      <li>We do not sell or share user data</li>
     </ul>
 
     <h2>Permissions Explained</h2>
     <ul>
-      <li><strong>storage:</strong> Save your preferences and notes locally</li>
+      <li><strong>storage:</strong> Save preferences, thesis notes, alerts, and cached data locally</li>
       <li><strong>notifications:</strong> Send price alert notifications</li>
       <li><strong>alarms:</strong> Check prices periodically for alerts</li>
-      <li><strong>activeTab:</strong> Detect when you're on a Kalshi market page</li>
-      <li><strong>Host permissions:</strong> Access Kalshi pages and fetch data from APIs listed above</li>
+      <li><strong>Host permissions:</strong> Access Kalshi pages and fetch data from the APIs listed above</li>
     </ul>
 
     <h2>Data Deletion</h2>
     <p>
       To delete all stored data, uninstall the Extension from chrome://extensions.
-      You can also clear specific data from the Extension's options page.
+      You can also clear extension data through your browser's extension storage controls.
     </p>
 
     <h2>Changes to This Policy</h2>
     <p>
-      If we make changes, we'll update the "Last updated" date. Continued use of the Extension
-      after changes constitutes acceptance of the new policy.
+      If we make changes, we will update the "Last updated" date on this page.
     </p>
 
     <h2>Contact</h2>
     <p>
-      Questions? Open an issue on <a href="https://github.com/anirudhpareek/kalshi-intelligence" target="_blank">GitHub</a>.
+      Questions? Open an issue on <a href="https://github.com/anirudhpareek/kalshi-edge-os" target="_blank">GitHub</a>.
     </p>
 
     <a href="/" class="back">&larr; Back to home</a>
